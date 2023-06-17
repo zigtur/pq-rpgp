@@ -4,7 +4,7 @@ extern crate pretty_assertions;
 extern crate serde_json;
 #[macro_use]
 extern crate serde;
-extern crate pgp;
+extern crate pq_pgp;
 extern crate pretty_env_logger;
 #[macro_use]
 extern crate log;
@@ -12,8 +12,8 @@ extern crate log;
 use std::fs::File;
 use std::io::{Cursor, Read};
 
-use pgp::composed::{Deserializable, Message, SignedPublicKey, SignedSecretKey};
-use pgp::types::KeyTrait;
+use pq_pgp::composed::{Deserializable, Message, SignedPublicKey, SignedSecretKey};
+use pq_pgp::types::KeyTrait;
 
 #[derive(Serialize, Deserialize, Debug)]
 #[serde(rename_all = "camelCase")]

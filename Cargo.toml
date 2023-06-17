@@ -1,15 +1,15 @@
 [package]
-name = "pgp"
+name = "pq-pgp"
 version = "0.10.1"
-authors = ["dignifiedquire <dignifiedquire@gmail.com>"]
-description = "OpenPGP implementation in Rust"
+authors = ["dignifiedquire <dignifiedquire@gmail.com>", "zigtur <zigtur@protonmail.com"]
+description = "Post-Quantum OpenPGP implementation in Rust"
 license = "MIT OR Apache-2.0"
-homepage = "https://github.com/rpgp/rpgp"
-repository = "https://github.com/rpgp/rpgp"
+homepage = "https://github.com/zigtur/pq-rpgp"
+repository = "https://github.com/zigtur/pq-rpgp"
 readme = "README.md"
 resolver = "2"
 
-keywords = ["pgp", "gpg", "openpgp", "email", "encryption"]
+keywords = ["pgp", "gpg", "openpgp", "email", "encryption", "pqcrypto", "pqpgp"]
 categories = ["cryptography", "email"]
 
 exclude = ["tests/tests/*"]

@@ -12,7 +12,7 @@ use std::path::Path;
 use chrono::{DateTime, Utc};
 use num_bigint::BigUint;
 use num_traits::ToPrimitive;
-use pgp::armor;
+use pq_pgp::armor;
 use rand::thread_rng;
 use rsa::{
     traits::{PrivateKeyParts, PublicKeyParts},
@@ -20,19 +20,19 @@ use rsa::{
 };
 use smallvec::SmallVec;
 
-use pgp::composed::signed_key::*;
-use pgp::composed::Deserializable;
-use pgp::crypto::{
+use pq_pgp::composed::signed_key::*;
+use pq_pgp::composed::Deserializable;
+use pq_pgp::crypto::{
     ecc_curve::ECCCurve, hash::HashAlgorithm, public_key::PublicKeyAlgorithm,
     sym::SymmetricKeyAlgorithm,
 };
-use pgp::errors::Error;
-use pgp::packet::{
+use pq_pgp::errors::Error;
+use pq_pgp::packet::{
     KeyFlags, Signature, SignatureType, SignatureVersion, Subpacket, SubpacketData, UserAttribute,
     UserId,
 };
-use pgp::ser::Serialize;
-use pgp::types::{
+use pq_pgp::ser::Serialize;
+use pq_pgp::types::{
     CompressionAlgorithm, ECDSASecretKey, KeyId, KeyTrait, KeyVersion, Mpi, PublicParams,
     SecretKeyRepr, SecretKeyTrait, SecretParams, SignedUser, StringToKeyType, Version,
 };

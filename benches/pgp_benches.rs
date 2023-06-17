@@ -1,6 +1,6 @@
 #![feature(test)]
 
-extern crate pgp;
+extern crate pq_pgp;
 extern crate test;
 #[macro_use]
 extern crate smallvec;

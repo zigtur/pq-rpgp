@@ -3,7 +3,7 @@ use std::io::Cursor;
 use std::io::Read;
 use test::{black_box, Bencher};
 
-use pgp::composed::{Deserializable, Message, SignedSecretKey};
+use pq_pgp::composed::{Deserializable, Message, SignedSecretKey};
 
 #[cfg(feature = "profile")]
 use gperftools::profiler::PROFILER;

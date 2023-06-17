@@ -2,13 +2,13 @@ use std::fs::{self, File};
 use std::io::Cursor;
 use test::{black_box, Bencher};
 
-use pgp::composed::{
+use pq_pgp::composed::{
     Deserializable, KeyType, SecretKey, SecretKeyParamsBuilder, SignedSecretKey,
     SubkeyParamsBuilder,
 };
-use pgp::crypto::{hash::HashAlgorithm, sym::SymmetricKeyAlgorithm};
-use pgp::ser::Serialize;
-use pgp::types::CompressionAlgorithm;
+use pq_pgp::crypto::{hash::HashAlgorithm, sym::SymmetricKeyAlgorithm};
+use pq_pgp::ser::Serialize;
+use pq_pgp::types::CompressionAlgorithm;
 
 #[cfg(feature = "profile")]
 use gperftools::profiler::PROFILER;
